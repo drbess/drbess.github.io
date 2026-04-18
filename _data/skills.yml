@@ -1,0 +1,4 @@
+- category: Languages
+  items: [Go, Python, Rust, JavaScript, Bash]
+- category: SRE & Observability
+  items: [Prometheus, Grafana, Loki, OpenTelemetry, Kubernetes]
