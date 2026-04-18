@@ -1,0 +1,15 @@
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    {% for group in skills %}
+      <div class="skill-category">
+        <h3>{{ group.category }}</h3>
+        <ul>
+          {% for item in group.items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</section>
