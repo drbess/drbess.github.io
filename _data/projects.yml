@@ -1,0 +1,9 @@
+- name: Personal Portfolio Site
+  description: This portfolio site built with Lume and deployed via GitHub Pages.
+  url: https://drbess.github.io
+
+- name: SRE Observability Stack
+  description: Prometheus, Grafana, and Loki monitoring stack for Kubernetes workloads.
+
+- name: Go Microservices
+  description: High-performance microservices written in Go with OpenTelemetry instrumentation.
