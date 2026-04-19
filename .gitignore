@@ -3,7 +3,7 @@
 /.vscode/
 
 /node_modules
-
+_site/
 .env
 *.orig
 *.pyc
