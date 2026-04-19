@@ -1,0 +1,216 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0d0d0d;
+  --surface: #161616;
+  --border: #252525;
+  --accent: #6ee7b7;
+  --accent-dim: rgba(110, 231, 183, 0.12);
+  --text: #e5e5e5;
+  --muted: #777;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── Header ─────────────────────────────────────── */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(13, 13, 13, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 2rem;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  flex-shrink: 0;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.profile-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.profile-tagline {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+/* ── Content ─────────────────────────────────────── */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem 6rem;
+}
+
+/* ── Hero ────────────────────────────────────────── */
+.hero {
+  padding: 5rem 0 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.hero-heading {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 1.25rem;
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.75;
+}
+
+/* ── Sections ────────────────────────────────────── */
+.section {
+  padding: 3.5rem 0;
+  border-top: 1px solid var(--border);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.section-title {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* ── Skills ──────────────────────────────────────── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.skill-category {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.skill-list li {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.skill-list li::before {
+  content: '›  ';
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ── Projects ────────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: border-color 0.2s ease;
+}
+
+.project-card:hover { border-color: var(--accent); }
+
+.project-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.project-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  flex: 1;
+}
+
+.project-link {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--accent);
+  text-decoration: none;
+  margin-top: 0.25rem;
+  align-self: flex-start;
+}
+
+.project-link:hover { text-decoration: underline; }
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 600px) {
+  .site-header { padding: 0.65rem 1rem; }
+  .content { padding: 0 1rem 4rem; }
+  .hero { padding: 3rem 0 2.5rem; }
+}

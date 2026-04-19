@@ -1,10 +1,10 @@
-<section id="skills">
-  <h2>Skills</h2>
+<section id="skills" class="section">
+  <h2 class="section-title">Skills</h2>
   <div class="skills-grid">
     {{ for group of skills }}
-      <div class="skill-category">
-        <h3>{{ group.category }}</h3>
-        <ul>
+      <div class="skill-card">
+        <h3 class="skill-category">{{ group.category }}</h3>
+        <ul class="skill-list">
           {{ for item of group.items }}
             <li>{{ item }}</li>
           {{ /for }}
