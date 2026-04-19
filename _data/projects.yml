@@ -1,5 +1,5 @@
 - name: Personal Portfolio Site
-  description: This portfolio site built with Lume and deployed via GitHub Pages.
+  description: This portfolio site is built with Lume and deployed via GitHub Pages.
   url: https://drbess.github.io
 
 - name: SRE Observability Stack
