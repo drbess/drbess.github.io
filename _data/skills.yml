@@ -1,4 +1,23 @@
 - category: Languages
-  items: [Go, Python, Rust, JavaScript, Bash]
+  icon: "{}"
+  items: [Go, Python, Rust, JavaScript/TypeScript, Bash]
+
 - category: SRE & Observability
-  items: [Prometheus, Grafana, Loki, OpenTelemetry, Kubernetes]
+  icon: "↯"
+  items: [Prometheus, Grafana, Loki, Tempo, OpenTelemetry, Kubernetes, Istio]
+
+- category: Cloud & IaC
+  icon: "☁"
+  items: [AWS (EC2, Lambda, RDS, S3), Terraform, Pulumi, ArgoCD]
+
+- category: Automation & CI/CD
+  icon: "⚙"
+  items: [GitHub Actions, GitLab CI, Jenkins, Ansible]
+
+- category: Databases
+  icon: "▤"
+  items: [PostgreSQL, DynamoDB, Redis, Cassandra]
+
+- category: Systems & Security
+  icon: "⌘"
+  items: [Linux/Kernel, Networking (TCP/IP, HTTP/gRPC), Security (OAuth2, mTLS)]

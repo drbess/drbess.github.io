@@ -1,9 +1,12 @@
-<section id="skills" class="section">
-  <h2 class="section-title">Skills</h2>
+<section id="skills" class="section" aria-labelledby="skills-title">
+  <h2 class="section-title" id="skills-title">Skills</h2>
   <div class="skills-grid">
     {{ for group of skills }}
       <div class="skill-card">
-        <h3 class="skill-category">{{ group.category }}</h3>
+        <div class="skill-header">
+          <span class="skill-icon" aria-hidden="true">{{ group.icon }}</span>
+          <h3 class="skill-category">{{ group.category }}</h3>
+        </div>
         <ul class="skill-list">
           {{ for item of group.items }}
             <li>{{ item }}</li>

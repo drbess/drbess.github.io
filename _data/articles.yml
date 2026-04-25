@@ -1,7 +1,20 @@
-- title: Getting Started with OpenTelemetry in Go
+- title: Building a Resilient On-Call Culture
+  excerpt: How I rebuilt our incident response process around blameless postmortems, automated runbooks, and shared ownership.
+  tags: [SRE, On-Call, Culture]
+  readTime: 8 min
+  date: 2026-02-12
   url: ""
-  date: 2024-01-15
 
-- title: Building Reliable Kubernetes Clusters
+- title: Debugging a 99th-Percentile Latency Mystery
+  excerpt: A walk through tracing a tail-latency regression across three service hops using OpenTelemetry and eBPF.
+  tags: [Observability, Performance, eBPF]
+  readTime: 12 min
+  date: 2026-01-20
   url: ""
-  date: 2024-03-10
+
+- title: Cutting Cloud Spend Without Hurting Reliability
+  excerpt: A pragmatic framework for rightsizing, savings plans, and waste detection that saved one team $200K a year.
+  tags: [Cloud, FinOps, AWS]
+  readTime: 6 min
+  date: 2025-11-05
+  url: ""

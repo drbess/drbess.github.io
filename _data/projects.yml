@@ -1,9 +1,31 @@
-- name: Personal Portfolio Site
-  description: This portfolio site is built with Lume and deployed via GitHub Pages.
-  url: https://drbess.github.io
+- name: Automated Incident Response Platform
+  stack: [Go, Kubernetes, Prometheus, OpenTelemetry, Slack API]
+  problem: Manual triage delayed mean-time-to-recovery for production incidents across 200+ microservices.
+  outcome: Reduced MTTR by 40% by routing alerts to on-call engineers with contextual runbooks and one-click rollback.
+  links:
+    github: https://github.com/drbess
+    blog: ""
+    demo: ""
 
-- name: SRE Observability Stack
-  description: Prometheus, Grafana, and Loki monitoring stack for Kubernetes workloads.
+- name: Multi-Region Cost Optimization
+  stack: [Terraform, AWS, Python, Grafana]
+  problem: Idle reserved capacity and oversized EC2 instances inflated the monthly cloud bill across three regions.
+  outcome: Saved $200K/year through automated rightsizing recommendations and savings-plan rebalancing.
+  links:
+    github: https://github.com/drbess
+    blog: ""
 
-- name: Go Microservices
-  description: High-performance microservices written in Go with OpenTelemetry instrumentation.
+- name: Observability Stack Migration
+  stack: [Loki, Tempo, Grafana, OpenTelemetry, Helm]
+  problem: Fragmented logging and tracing across three vendor tools made cross-service debugging slow and expensive.
+  outcome: Cut observability spend by 60% and shipped a unified Grafana experience for 50+ engineers.
+  links:
+    github: https://github.com/drbess
+    blog: ""
+
+- name: GitOps Deployment Pipeline
+  stack: [ArgoCD, GitHub Actions, Kubernetes, Pulumi]
+  problem: Inconsistent deploy workflows across teams led to drift between environments and slow release cycles.
+  outcome: Standardized 12 services on a single GitOps pipeline; deploy frequency rose 3x with zero rollback regressions.
+  links:
+    github: https://github.com/drbess
