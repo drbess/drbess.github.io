@@ -1,0 +1,35 @@
+<section id="articles" class="section" aria-labelledby="articles-title">
+  <h2 class="section-title" id="articles-title">Writing</h2>
+  <div class="articles-list">
+    {{ for article of articles }}
+      <article class="article-card">
+        <div class="article-meta">
+          {{ if article.date }}
+            <time datetime="{{ article.date }}">{{ article.date }}</time>
+            <span class="meta-sep" aria-hidden="true">·</span>
+          {{ /if }}
+          {{ if article.readTime }}
+            <span>{{ article.readTime }}</span>
+          {{ /if }}
+        </div>
+        <h3 class="article-title">
+          {{ if article.url }}
+            <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }} ↗</a>
+          {{ else }}
+            {{ article.title }}
+          {{ /if }}
+        </h3>
+        {{ if article.excerpt }}
+          <p class="article-excerpt">{{ article.excerpt }}</p>
+        {{ /if }}
+        {{ if article.tags }}
+          <ul class="article-tags" aria-label="Tags">
+            {{ for tag of article.tags }}
+              <li class="tag">{{ tag }}</li>
+            {{ /for }}
+          </ul>
+        {{ /if }}
+      </article>
+    {{ /for }}
+  </div>
+</section>
