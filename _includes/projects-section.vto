@@ -1,14 +1,34 @@
-<section id="projects" class="section">
-  <h2 class="section-title">Projects</h2>
+<section id="projects" class="section" aria-labelledby="projects-title">
+  <h2 class="section-title" id="projects-title">Projects</h2>
   <div class="projects-grid">
     {{ for project of projects }}
-      <div class="project-card">
+      <article class="project-card">
         <h3 class="project-name">{{ project.name }}</h3>
-        <p class="project-desc">{{ project.description }}</p>
-        {{ if project.url }}
-          <a href="{{ project.url }}" class="project-link" target="_blank" rel="noopener">View ↗</a>
+        {{ if project.stack }}
+          <ul class="tech-pills" aria-label="Tech stack">
+            {{ for tech of project.stack }}
+              <li class="tech-pill">{{ tech }}</li>
+            {{ /for }}
+          </ul>
         {{ /if }}
-      </div>
+        {{ if project.problem }}
+          <p class="project-desc">{{ project.problem }}</p>
+        {{ /if }}
+        {{ if project.outcome }}
+          <p class="project-outcome"><span class="outcome-label">Outcome ›</span> {{ project.outcome }}</p>
+        {{ /if }}
+        <div class="project-links">
+          {{ if project.links.github }}
+            <a class="project-link" href="{{ project.links.github }}" target="_blank" rel="noopener">GitHub ↗</a>
+          {{ /if }}
+          {{ if project.links.demo }}
+            <a class="project-link" href="{{ project.links.demo }}" target="_blank" rel="noopener">Demo ↗</a>
+          {{ /if }}
+          {{ if project.links.blog }}
+            <a class="project-link" href="{{ project.links.blog }}" target="_blank" rel="noopener">Blog ↗</a>
+          {{ /if }}
+        </div>
+      </article>
     {{ /for }}
   </div>
 </section>

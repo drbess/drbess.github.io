@@ -1,7 +1,20 @@
-- title: Getting Started with OpenTelemetry in Go
-  url: ""
-  date: 2024-01-15
+- title: Building a Resilient On-Call Culture
+  excerpt: "On-call isn't just alert response — it's building a blameless, high-trust team that learns from production incidents fast.
+  tags: [SRE, On-Call, Incident Management, Engineering Culture, MTTD, MTTR]
+  readTime: 5 min
+  date: 2024-08-23
+  url: "https://medium.com/@arjunrao87/how-to-build-a-healthy-on-call-culture-e6467a9d10d1"
 
-- title: Building Reliable Kubernetes Clusters
-  url: ""
-  date: 2024-03-10
+- title: "P99 Latency: What It Means & How to Fix It"
+  excerpt: "P99 latency measures the slowest 1% of your requests — a better health signal than averages for catching tail latency issues in production."
+  readTime: 7 min
+  tags: [SRE, Observability, Latency, Performance, Redis]
+  date: 2026-04-07
+  url: "https://redis.io/blog/p99-latency/"
+
+- title: Cutting Cloud Spend Without Hurting Reliability
+  excerpt: "Which cloud dollars are doing real work, and which ones are just vibing? An SRE's guide to spending less without breaking everything."
+  tags: [SRE, DevOps, Cloud, Automation]
+  readTime: 5 min
+  date: "TBD"
+  url: "Loading link"
