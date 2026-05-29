@@ -16,8 +16,8 @@
 
 - category: Databases
   icon: "▤"
-  items: [MySQL, PostgreSQL, DynamoDB, Redis, Cassandra, MongoDB]
+  items: [MySQL, PostgreSQL, DynamoDB, Redis, MongoDB]
 
 - category: Systems & Security
   icon: "⌘"
-  items: [Linux/Kernel, Networking (TCP/IP, HTTP/gRPC), Security (OAuth2, mTLS)]
+  items: [Linux/Kernel, Networking (TCP/IP, HTTP/gRPC), Security (OAuth2)]
