@@ -1,5 +1,5 @@
 - title: Building a Resilient On-Call Culture
-  excerpt: "On-call isn't just alert response — it's building a blameless, high-trust team that learns from production incidents fast.
+  excerpt: "On-call isn't just alert response — it's building a blameless, high-trust team that learns from production incidents fast."
   tags: [SRE, On-Call, Incident Management, Engineering Culture, MTTD, MTTR]
   readTime: 5 min
   date: 2024-08-23
@@ -16,5 +16,5 @@
   excerpt: "Which cloud dollars are doing real work, and which ones are just vibing? An SRE's guide to spending less without breaking everything."
   tags: [SRE, DevOps, Cloud, Automation]
   readTime: 5 min
-  date: "TBD"
-  url: "Loading link"
+  date: 2026-05-29
+  url: ""
