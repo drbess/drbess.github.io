@@ -1,7 +1,24 @@
 - name: The Observability Stack
   stack: [Loki, Tempo, Grafana, OpenTelemetry, Helm]
-  problem: Fragmented logging and tracing across three vendor tools made cross-service debugging slow and expensive.
-  outcome: In-progress.
+  problem: Fragmented logging and tracing across multiple vendor tools made cross-service debugging slow and expensive.
+  outcome: In-progress — unifying logs, metrics, and traces under a single Grafana experience for personal infrastructure.
   links:
     github: https://github.com/srechamp/obs-stack
-    document: "Loading..."
+
+- name: OCI Sovereign Cloud Incident Automation
+  stack: [Python, OCI APIs, OCI Alarms, O.C.E.A.N., FedRAMP/IL5]
+  problem: Manual My Oracle Support (MOS) Service Request triage and stakeholder notifications slowed mean time to resolution for critical Sovereign Cloud incidents.
+  outcome: Automated SR creation, severity triage, and notifications via Python + OCI APIs; measurably reduced MTTR across low-side and high-side government realms.
+  links: {}
+
+- name: CAB Workflow Automation
+  stack: [Python, OCI APIs, GitHub Actions, Buildkite]
+  problem: Manual Change Advisory Board review created a deployment backlog for OCI service teams, slowing safe release velocity.
+  outcome: Engineered automation pipelines that eliminated manual change request processing, cut the review queue, and accelerated deployments for the Sovereign Cloud org.
+  links: {}
+
+- name: Twilio Resilience Platform
+  stack: [PagerDuty, Rollbar, Prometheus, Python, Ansible]
+  problem: Production outages required manual triage that extended downtime windows and risked SLA breach across distributed services.
+  outcome: Cut downtime 40% with automated monitoring, runbooks, and recovery tooling; sustained 99.99% availability and reduced manual operational effort by 50%.
+  links: {}
