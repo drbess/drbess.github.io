@@ -27,6 +27,9 @@
           {{ if project.links.blog }}
             <a class="project-link" href="{{ project.links.blog }}" target="_blank" rel="noopener">Blog ↗</a>
           {{ /if }}
+          {{ if project.links.document }}
+            <a class="project-link" href="{{ project.links.document }}" target="_blank" rel="noopener">Doc ↗</a>
+          {{ /if }}
         </div>
       </article>
     {{ /for }}
